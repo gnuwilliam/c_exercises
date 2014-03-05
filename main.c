@@ -11,12 +11,11 @@
 /* 
  * 1. Elabore um programa que escreva as mensagens:
  *    "Início do Programa" e "Fim" na tela, uma em cada linha,
- *    usando apenas o comando `printf()`.
+ *    usando apenas um comando `printf()`.
  */
 
 void exercise_1() {
-    printf("Início do Programa\n");
-    printf("Fim\n");
+    printf("Início do Programa\nFim\n");
 }
 
 /*
@@ -31,6 +30,18 @@ void exercise_2() {
     printf("O valor digitado foi: %d \n", num);
 }
 
+/*
+ * 3. Escreva um programa que leia um número inteiro e depois imprima
+ *    a mensagem: "Valor lido:", seguido do valor inteiro. Use apenas um
+ *    comando `printf()`
+ */
+
+void exercise_3() {
+    int num;
+    scanf("%d", &num);
+    printf("Valor lido: %d\n", num);
+}
+
 int main() {
     char choice;
     
@@ -40,6 +51,7 @@ int main() {
     switch(choice) {
         case '1': exercise_1(); break;
         case '2': exercise_2(); break;
+        case '3': exercise_3(); break;
         default: printf("Você não selecionou uma opcão correta!\n");
     }
     
