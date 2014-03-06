@@ -78,6 +78,18 @@ void exercise_6() {
     printf("O valor digitado foi: %e\n", num);
 }
 
+/*
+ * 7. Elabore um programa que leia um caractere e depois o imprima
+ *    como inteiro
+ */
+
+void exercise_7() {
+    char ch;
+    printf("Digite um caractere: ");
+    scanf("%c", &ch);
+    printf("O valor digitado foi: %d\n", ch);
+}
+
 int main() {
     char choice;
     
@@ -91,6 +103,7 @@ int main() {
         case '4': exercise_4(); break;
         case '5': exercise_5(); break;
         case '6': exercise_6(); break;
+        case '7': exercise_7(); break;
         default: printf("Você não selecionou uma opcão correta!\n");
     }
     
