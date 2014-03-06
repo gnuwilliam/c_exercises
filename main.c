@@ -90,6 +90,25 @@ void exercise_7() {
     printf("O valor digitado foi: %d\n", ch);
 }
 
+/*
+ * 8. Faça um programa que leia dois números inteirose depois os imprima
+ *    na ordem inversa em que eles foram lidos.
+ */
+
+void exercise_8() {
+    int num1;
+    int num2;
+    
+    printf("Digite o primeiro valor: ");
+    scanf("%d", &num1);
+    
+    printf("Digite o segundo valor: ");
+    scanf("%d", &num2);
+    
+    printf("%d\n", num2);
+    printf("%d\n", num1);
+}
+
 int main() {
     char choice;
     
@@ -104,6 +123,7 @@ int main() {
         case '5': exercise_5(); break;
         case '6': exercise_6(); break;
         case '7': exercise_7(); break;
+        case '8': exercise_8(); break;
         default: printf("Você não selecionou uma opcão correta!\n");
     }
     
