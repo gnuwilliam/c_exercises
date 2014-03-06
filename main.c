@@ -42,6 +42,18 @@ void exercise_3() {
     printf("Valor lido: %d\n", num);
 }
 
+/*
+ * 4. Faça um programa que leia um número inteiro e depois o imprima usando
+ *    o operador `%f`. Veja o que acontece.
+ */
+
+void exercise_4() {
+    int num;
+    printf("Digite um valor inteiro: ");
+    scanf("%d", &num);
+    printf("O valor digitado foi %f\n", num);
+}
+
 int main() {
     char choice;
     
@@ -52,6 +64,7 @@ int main() {
         case '1': exercise_1(); break;
         case '2': exercise_2(); break;
         case '3': exercise_3(); break;
+        case '4': exercise_4(); break;
         default: printf("Você não selecionou uma opcão correta!\n");
     }
     
