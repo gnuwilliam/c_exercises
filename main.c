@@ -109,6 +109,23 @@ void exercise_8() {
     printf("%d\n", num1);
 }
 
+/*
+ * 9. Faça um programa que leia dois valores do tipo float. Use um único
+ *    comando de leitura pra isso. Em seguida, imprima os valores
+ *    na ordem inversa em que eles foram lidos.
+ */
+
+void exercise_9() {
+    float num1;
+    float num2;
+    
+    printf("Digite dois valores do tipo float: ");
+    scanf("%f %f", &num1, &num2);
+    
+    printf("%f\n", num2);
+    printf("%f\n", num1);
+}
+
 int main() {
     char choice;
     
@@ -124,6 +141,7 @@ int main() {
         case '6': exercise_6(); break;
         case '7': exercise_7(); break;
         case '8': exercise_8(); break;
+        case '9': exercise_9(); break;
         default: printf("Você não selecionou uma opcão correta!\n");
     }
     
