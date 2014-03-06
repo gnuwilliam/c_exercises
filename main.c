@@ -54,6 +54,18 @@ void exercise_4() {
     printf("O valor digitado foi %f\n", num);
 }
 
+/*
+ * 5. Faça um programa que leia um valor do tipo float e depois o imprima
+ *    usando o operador `%d`. Veja o que acontece.
+ */
+
+void exercise_5() {
+    int num;
+    printf("Digite um valor do tipo float: ");
+    scanf("%f", &num);
+    printf("O valor digitado foi %d\n", num);
+}
+
 int main() {
     char choice;
     
@@ -65,6 +77,7 @@ int main() {
         case '2': exercise_2(); break;
         case '3': exercise_3(); break;
         case '4': exercise_4(); break;
+        case '5': exercise_5(); break;
         default: printf("Você não selecionou uma opcão correta!\n");
     }
     
