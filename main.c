@@ -151,6 +151,17 @@ void exercise_10() {
     printf("A data atual é: %d/%d/%d\n", day, month, year);
 }
 
+/*
+ * 11. Elabore um programa que contenha uma constante qualquer do tipo float.
+ *     Use o comando `#define`. Imprima essa constante.
+ */
+
+void exercise_11() {
+    #define NUM 10.50
+
+    printf("%f\n", NUM);
+}
+
 int main() {
     int choice;
     
@@ -187,6 +198,9 @@ int main() {
             break;
         case 10:
             exercise_10(); 
+            break;
+        case 11:
+            exercise_11();
             break;
         default: printf("Você não selecionou uma opcão correta!\n");
     }
