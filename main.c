@@ -60,10 +60,22 @@ void exercise_4() {
  */
 
 void exercise_5() {
-    int num;
+    float num;
     printf("Digite um valor do tipo float: ");
     scanf("%f", &num);
     printf("O valor digitado foi %d\n", num);
+}
+
+/*
+ * 6. Faça um programa que leia um valor do tipo double e depois o imprima
+ *    na forma de notação científica.
+ */
+
+void exercise_6() {
+    double num;
+    printf("Digite um valor do tipo double: ");
+    scanf("%f", &num);
+    printf("O valor digitado foi: %e\n", num);
 }
 
 int main() {
@@ -78,9 +90,10 @@ int main() {
         case '3': exercise_3(); break;
         case '4': exercise_4(); break;
         case '5': exercise_5(); break;
+        case '6': exercise_6(); break;
         default: printf("Você não selecionou uma opcão correta!\n");
     }
     
-    printf("Até logo!\n\n");
+    printf("Até logo!\n");
     return 0;
 }
