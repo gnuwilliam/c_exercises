@@ -126,22 +126,68 @@ void exercise_9() {
     printf("%f\n", num1);
 }
 
+/*
+ * 10. Elabore um programa que solicite ao usuário entrar com o valor do dia,
+ *     mês e ano (inteiros). Em seguida, imprima os valores lidos separados
+ *     por uma barra (/)
+ */
+
+void exercise_10() {
+    int day;
+    int month;
+    int year;
+    
+    printf("Digite os valores a seguir no formato 00/00/0000\n");
+    
+    printf("Que dia é hoje? ");
+    scanf("%d", &day);
+    
+    printf("Em que mês estamos? ");
+    scanf("%d", &month);
+    
+    printf("Em que ano estamos? ");
+    scanf("%d", &year);
+    
+    printf("A data atual é: %d/%d/%d\n", day, month, year);
+}
+
 int main() {
-    char choice;
+    int choice;
     
     printf("Digite o número do exercício que deseja executar (entre 1 e 15): ");
-    choice = getchar();
+    scanf("%d", &choice);
     
     switch(choice) {
-        case '1': exercise_1(); break;
-        case '2': exercise_2(); break;
-        case '3': exercise_3(); break;
-        case '4': exercise_4(); break;
-        case '5': exercise_5(); break;
-        case '6': exercise_6(); break;
-        case '7': exercise_7(); break;
-        case '8': exercise_8(); break;
-        case '9': exercise_9(); break;
+        case 1: 
+            exercise_1(); 
+            break;
+        case 2: 
+            exercise_2(); 
+            break;
+        case 3: 
+            exercise_3(); 
+            break;
+        case 4: 
+            exercise_4(); 
+            break;
+        case 5: 
+            exercise_5(); 
+            break;
+        case 6: 
+            exercise_6(); 
+            break;
+        case 7: 
+            exercise_7(); 
+            break;
+        case 8: 
+            exercise_8(); 
+            break;
+        case 9: 
+            exercise_9(); 
+            break;
+        case 10:
+            exercise_10(); 
+            break;
         default: printf("Você não selecionou uma opcão correta!\n");
     }
     
