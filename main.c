@@ -162,6 +162,17 @@ void exercise_11() {
     printf("%f\n", NUM);
 }
 
+/*
+ * 12. Elabore um programa que contenha uma constante qualquer do tipo int.
+ *     Use o comando `const`. Imprima essa constante.
+ */
+
+void exercise_12() {
+    const int NUM1 = 10;
+    
+    printf("%d\n", NUM1);
+}
+
 int main() {
     int choice;
     
@@ -201,6 +212,9 @@ int main() {
             break;
         case 11:
             exercise_11();
+            break;
+        case 12:
+            exercise_12();
             break;
         default: printf("Você não selecionou uma opcão correta!\n");
     }
