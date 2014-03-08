@@ -190,7 +190,7 @@ void exercise_13() {
 int main() {
     int choice;
 
-    printf("Digite o número do exercício que deseja executar (entre 1 e 15): ");
+    printf("Digite o número do exercício que deseja executar (entre 1 e 13): ");
     scanf("%d", &choice);
 
     switch(choice) {
